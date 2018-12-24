@@ -6,26 +6,26 @@ browser = webdriver.Firefox()
 
 # ------------------------------------------------------------------------------------------------#
 
-# browser.get("https://www.syncatardenpark.com/")
-# browser.implicitly_wait(5) #wait 5 seconds
+browser.get("https://www.syncatardenpark.com/")
+browser.implicitly_wait(5) #wait 5 seconds
 
-# apart = browser.find_element_by_css_selector('.popup-special-link')
-# print(apart.text)
-# apart.click()
+apart = browser.find_element_by_css_selector('.popup-special-link')
+print(apart.text)
+apart.click()
 
-# browser.implicitly_wait(10)
-# welcomeButton = browser.find_element_by_id('WelcomeMessageCloseButton')
-# print(welcomeButton.text)
-# welcomeButton.click()
+browser.implicitly_wait(10)
+welcomeButton = browser.find_element_by_id('WelcomeMessageCloseButton')
+print(welcomeButton.text)
+welcomeButton.click()
 
-# browser.implicitly_wait(2)
-# price = browser.find_elements_by_class_name('fv')
+browser.implicitly_wait(2)
+price = browser.find_elements_by_class_name('fv')
 
-# priceText = []
-# for x in price:
-#     y = x.text
-#     if len(y) is not 0:
-#         print(y)
+
+for x in price:
+    y = x.text
+    if len(y) is not 0:
+        print(y)
 
 # ------------------------------------------------------------------------------------------------ #
 
@@ -60,28 +60,32 @@ browser = webdriver.Firefox()
 #         print(price[i].text)
 
 # ------------------------------------------------------------------------------------------------ #
-
-browser.get('https://www.boardwalkmedcenter.com/floorplans.aspx')
-browser.implicitly_wait(5)
-
-tab = browser.find_elements_by_xpath("//*[contains(@data-selenium-id, 'FPRowNum')]")
-
-for x in tab:
-    print(x.text)
-    price = browser.find_elements_by_xpath("//*[contains(@data-selenium-id, 'Rent_')]")
-    for y in price:
-        z = y.text
-        if len(z) is not 0:
-            print(z)
-
-    x.click()
-
-    # price = browser.find_elements_by_xpath("//*[contains(@data-selenium-id, 'Rent_')]")
-
-    # for x in price:
-    #         y = x.text
-    #         if len(y) is not 0:
-    #                 print(y)
+# def removeNone(list):
+#     newList = []
+#     for x in list:
+#         y = x.text
+#         if len(y) is not 0:
+#             newList.append(y)
+#
+# browser.get('https://www.boardwalkmedcenter.com/floorplans.aspx')
+# browser.implicitly_wait(5)
+#
+# tab = browser.find_elements_by_xpath("//*[contains(@data-selenium-id, 'FPRowNum')]")
+#
+# for x in tab:
+#     print(x.text)
+#     # price = browser.find_elements_by_xpath("//*[contains(@data-selenium-id, 'Rent_')]")
+#     # print(removeNone(price))
+#
+#
+#     price = browser.find_elements_by_xpath("//*[contains(@data-selenium-id, 'Rent_')]")
+#
+#     for y in price:
+#             z = y.text
+#             if len(z) is not 0:
+#                     print(z)
+#
+#     x.click()
 
 
 
