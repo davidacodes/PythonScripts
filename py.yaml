@@ -1,0 +1,33 @@
+
+-
+  topic: The topic I will say out loud
+  content: The information I'll check after saying out loud what I know
+  keywords: reference, words
+-
+  topic: Convert string to float
+  content: float(a)
+  keywords:
+-
+  topic: Convert a number to a string
+  content: string1 = str(5)
+  keywords:
+-
+  topic: Exit from the current Loop
+  content: Break
+  keywords:
+-
+  topic: Get a substring
+  content: name2 = name1[5:10]
+  keywords:
+-
+  topic: Get the current file path
+  content: path1 = os.getcwd()
+  keywords:
+-
+  topic: Exit python & give a error number
+  content: sys.exit(1)
+  keywords:
+-
+  topic: If statement, equality
+  content: if num1 == num2
+  keywords:
