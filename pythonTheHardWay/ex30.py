@@ -1,22 +1,21 @@
-people = 30
-cars = 40
-trucks = 15
+# import time
+# #
+# # print("Welcome to the Haunted Castle!")
+# # playerName = input("What's your name:  ")
+# # print(f"Welcome {playerName}, I hope you don't scare easy!")
+# #
+# # time.sleep(1)
+# # print("You enter the castle and find yourself in a large room with two doors.")
+# # time.sleep(1)
+# # playerChoice = input("Do you enter the left or right door?:")
+# #
+# # print(f"You picked the {playerChoice} door!")
+# #
+# # if playerChoice == "left":
+# #     print("This room is full of bats!")
+# # elif playerChoice == "right":
+# #     print("This room just as one chair in it.")
+# # else:
+# #     print(f"There isn't a {playerChoice} door!")
 
-if cars > people:
-    print("We should take the cars.")
-elif cars < people:
-    print("We should not take the cars.")
-else:
-    print("We can't decide.")
 
-if trucks > cars:
-    print("That's too many trucks.")
-elif trucks < cars:
-    print("Maybe we could take the trucks.")
-else:
-    print("We still can't decide.")
-
-if people > trucks:
-    print("Alright, lets just take the trucks.")
-else:
-    print("Fine, let's stay home then.")
